@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Like Button</title>
+		<style>
+			#likeBtn {
+					background-color: #a8e0f7;
+					border: 1px solid #188cef;
+					border-radius: 3px;
+					color: #222222;
+					line-height: 25px;
+					padding: 0;
+					width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<input id="likeBtn" type="button" value="Like" onclick="like()"/>
+	</body>
+	<script>
+		var likeBtn = document.getElementById('likeBtn');
+		
+		function like(){
+			if(likeBtn.value == 'Like'){
+				likeBtn.value = 'Unlike';
+				likeBtn.style.background = '#ff7700';
+				likeBtn.style.border = '1px solid #ff0000';
+			}
+			else{
+				likeBtn.value = 'Like';
+				likeBtn.style.background = '#a8e0f7';
+				likeBtn.style.border = '1px solid #188cef';
+			}
+		}
+	</script>
+</html>
